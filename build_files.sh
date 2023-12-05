@@ -1,4 +1,11 @@
-echo " BUILD START"
-python3.11 -m pip install -r requirements.txt
-python3.11 manage.py collectstatic --noinput --clear
-echo " BUILD END"
+#!/bin/bash
+
+echo "BUILD START"
+
+# Install dependencies
+python3 -m pip install -r requirements.txt
+
+# Run Django management commands
+python3 manage.py collectstatic --noinput --clear
+
+echo "BUILD END"
