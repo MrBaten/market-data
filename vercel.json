@@ -11,7 +11,7 @@
             "config": { "distDir": "staticfiles_build" }
         }
     ],
-    "routers": [{
+    "routes": [{
             "src": "/static/(.*)",
             "dest": "/static/$1"
         },
